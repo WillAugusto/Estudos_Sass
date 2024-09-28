@@ -1,0 +1,25 @@
+@mixin flexCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+} // "funcao" pala centralizar  
+
+
+
+header {
+    @include flexCenter();
+    background: $primary;
+
+    button{
+        background: $secundary;
+        // color: $secundary;
+        &::after{
+            content: "olhaaa";
+        }
+    }
+    &:hover {
+        background: plum;
+    }
+    
+}
